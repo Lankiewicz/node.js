@@ -1,6 +1,13 @@
-console.log('start programu');
-setTimeout(function(){
-    console.log('hello ');
-}, 2000);
-console.log('world');
-// wyświetli: start programu world <2 sekundy przerwy> hello
+var expr = 'Papayas';
+switch (expr) {
+  case 'Oranges':
+    console.log('Oranges are $0.59 a pound.');
+    break;
+  case 'Mangoes':
+  case 'Papayas':
+    console.log('Mangoes and papayas are $2.79 a pound.');
+    // expected output: "Mangoes and papayas are $2.79 a pound."
+    break;
+  default:
+    console.log('Sorry, we are out of ' + expr + '.');
+}
